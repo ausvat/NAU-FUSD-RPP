@@ -1,0 +1,2439 @@
+/* Navigation bar css */
+
+/* makes website faster */
+.no-cpu {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+}
+
+/* font */
+@font-face {
+    font-family: 'gilroy-light';
+    src: url('fonts/Gilroy-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url('fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy-semi';
+    src: url('fonts/Gilroy-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    margin-bottom: 0rem;
+}
+
+.classtest {
+    width: 100%;
+    margin: 0 auto;
+    height: 47rem;
+    
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 51, 102);
+    position: absolute;
+    z-index: 500;
+    
+}
+
+nav {
+    
+    float:right;
+    
+}
+
+
+nav li {
+    font-family: 'gilroy-bold';
+    display: inline-block;
+    margin-left: 4.6875rem;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 0.3rem;
+    /*padding-left: 0.625rem;*/
+    color: white;
+    font-weight: 200;
+    font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0rem 25rem 0rem 0rem;
+}
+
+nav li::before {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 0.125rem;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 250ms;
+    border-radius: .3125rem;
+    padding-top: 0rem;
+    
+    
+    
+}
+nav li:hover::before {
+    width: 100%;
+    
+    background-color: rgb(241, 179, 0);
+    
+
+}
+
+.colorCode
+{
+    color: #f1b300;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.logoResize
+{
+    padding-left: 4rem;
+    height: 5rem;
+
+}
+/* hamburger menu */
+.xno {
+   display: none;
+   color: white;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.navtitle {
+    text-decoration: none;
+    font-size: 1.5rem;
+     color:white;
+      padding: 0rem 0rem 0rem 4.25rem;
+      display: inline-block;
+     
+}
+
+.whitesection{
+    width: 100%;
+    height: 4.2rem;
+}
+/* background image over all */
+
+.backgroundall {
+
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: static;
+    margin: 0 auto;
+}
+
+
+/* first section */
+
+.introbackground
+{
+    background-color: rgb(241, 179, 0);
+    width: 100%;
+    height: 40rem;
+    
+}
+
+.introbackgroundtext{
+
+    color: white;
+    position: absolute;
+    text-align: center;
+    margin: 0rem 13rem 0rem ;
+    /*outline: 2px solid blue;*/
+    font-size: 3rem;
+    
+    
+
+}
+
+.introbackgroundsecondarytext{
+    font-size: 1rem;
+    padding: 0rem 3rem 0rem 3rem;
+    
+}
+
+#introbtn
+{
+    background-color: rgba(0, 51, 102);
+    border: none;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+/* second section */
+.aboutusbackground
+{
+    background-color: rgba(0, 51, 102);
+    width: 100%;
+    height: 34rem;
+}
+
+.aboutusbigtextsection 
+{
+    position: absolute;
+    height: 30rem;
+    width: 50%;
+    /*outline: 2px solid black;*/
+
+}
+
+.aboutustextsection 
+{
+    position: absolute;
+    margin: 4rem 0 0 48%;
+    height: 27rem;
+    width: 48%;
+    /*outline: 2px solid red;*/
+    color: white;
+    font-size: 2rem;
+    border-left: 0.2rem solid rgb(241, 179, 0);
+    padding-top: 0rem;
+}
+
+.aboutusbigtext
+{
+    padding: 3rem 0 0 30%;
+    font-weight: 100;
+    font-size: 1.3rem;
+    /*outline: 2px solid yellow;*/
+    color:white;
+    
+}
+
+.title 
+{
+    padding-top: 2rem;
+    font-family: gilroy-bold;
+}
+
+.title:after
+{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 15%; /* This will center the border. */
+    width: 70%; /* Change this to whatever width you want. */
+    padding-top: 2rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+}
+.aboutusbiggertext
+{
+    padding-left: 30%;
+    font-size: 3rem;
+    color: white;
+    font-size: 3rem;
+    font-family: gilroy-bold;
+    
+}
+
+.aboutusbiggertext:after
+{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 0%; /* This will center the border. */
+    width: 60%; /* Change this to whatever width you want. */
+    padding-top: 1rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+}
+
+
+
+.axesimage
+{
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    display: inline-block;
+    margin: 0rem 0rem 0rem 30%;
+}
+
+.backgroundimg {
+    
+    
+    background-image:
+    url(images/new_aspen_gradient.png);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+}
+
+.backgroundoftext {
+    
+    
+    z-index: 120;
+    height: 34rem;
+    background-color: rgba(67,67,67,0.8);
+    border-radius:0.6rem;
+}
+/* third section */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.partnerColorBackground
+{
+    padding-top: 1rem;
+    background: linear-gradient(-45deg, rgba(253,187,45,1) 0%, rgba(0,51,102,1) 11%, rgba(0,33,66,1) 23%, rgba(253,187,45,1) 40%, rgba(0,51,102,1) 55%, rgba(0,51,102,1) 66%, rgba(253,187,45,1) 80%, rgba(0,51,102,1) 90%);
+    background-size: 400% 400%;
+    animation: gradient 10s ease forwards;
+    width: 100%;
+    height: 53rem;
+    z-index: 100;
+    margin: 0 auto;
+}
+.partnerBackground
+{
+    color: white;
+    display:flex;
+    margin-left: 1%;
+    width: 97.8%;
+    height: 52rem;
+    position: static;
+    background-color: white;
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.partnerTitle
+{
+    color: rgba(0, 51, 102);
+    font-size: 2.2rem;
+    white-space: nowrap;
+    text-align: center;
+    font-family: gilroy-bold;
+    
+    
+}
+
+.partnerTitle:after
+{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 15%; /* This will center the border. */
+    width: 70%; /* Change this to whatever width you want. */
+    padding-top: 3rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+    
+}
+
+.partnerTitleMargin
+{
+    text-align: center;
+    width: 98%;
+    height: 30rem;
+    position:absolute;
+    
+}
+
+.partnerDesc
+{
+    color: rgba(0, 51, 102);
+    font-size: 1.2rem;
+    padding: 1rem 20rem 0rem 20rem;
+    
+}
+
+.partnerImageContent
+{
+    padding: 10rem 0 0 9rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid red;*/
+    
+}
+
+.partnerCardOne
+{
+    color:white;
+    width: 20rem;
+    height: 20rem;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border-radius: 1rem;
+    text-align: left;
+    margin-right: 13rem;
+}
+
+.partnerCardTwo
+{
+    color:white;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 20rem;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    text-align: left;
+    margin-right: 13rem;
+}
+
+.partnerCardThree
+{
+    color:white;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 20rem;
+    background-color:white;
+    box-shadow: rgba(0,0,0, 0.4) 0px 30px 90px;
+    text-align: left;
+    margin-right: 13rem;
+}
+
+.imageResize
+{
+    padding-top: 0.25rem;
+    width: 20.5rem; height:20.5rem;
+}
+
+.nauimageResize
+{
+    height: 7rem; width: 19.5rem; padding-top: 6.5rem;
+}
+
+.nsfimageResize
+{
+    width: 19.9rem; height: 19.9rem;
+}
+
+/* fourth section */
+
+.teamBackground
+{
+    width: 100%;
+    height: 45rem;
+    background-color: rgb(0,51,102);
+    position: static;
+    background-image:
+    url(images/Humphrey-in-fall_694f32bf0e9ef81016789076834d1a45.jpeg);
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.teamTitleMargin
+{
+    padding-top: 1rem;
+    height: 30rem;
+    position:absolute;
+    padding-left: 10rem;
+    z-index: 2;
+    
+}
+.teamTitle
+{
+    font-size: 2.2rem;
+    color: white;
+    white-space: nowrap;
+    font-family: gilroy-bold;
+     
+}
+
+.teamTitle:after
+{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 0%; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 2.5rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+}
+
+.mountainOverlay
+{
+    opacity: 0.8;
+    background-image: linear-gradient(180deg, #1865bd,#000046);
+    position:absolute;
+    width: 100%;
+    height: 45rem;
+    display: inline-block;
+    z-index:1;
+}
+
+.teamImageContent
+{
+    padding: 12rem 0rem 0rem 8%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid red;*/
+    position:absolute;
+    z-index: 2;
+    
+}
+
+.teamCardOne
+{
+    
+    width: 20rem;
+    height: 20rem;
+    text-align: left;
+    margin-right: 7rem;
+}
+
+.teamCardTwo
+{
+    
+    width: 20rem;
+    height: 20rem;
+    
+    text-align: left;
+    margin-right: 7rem;
+}
+
+.teamCardThree
+{
+    
+    width: 20rem;
+    height: 20rem;
+    
+    text-align: left;
+    
+}
+
+.teamimageResize
+{
+    width: 15rem; height:15rem;
+    border: 0.2rem solid rgb(241, 179, 0);    
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+
+.teamDescriptions
+{
+    padding-left: 3rem;
+    color: white;
+    font-size: 1.2rem;
+    
+}
+
+
+/* in the press */
+
+
+.newspaperIcon
+{
+    position: absolute;
+    color: rgb(0,51,102);
+    font-size: 15rem;
+    padding-left: 5%;
+}
+.pressBackground
+{
+    background-color: #f1b300;
+    height: 20rem;
+}
+
+.pressTitle
+{
+    font-size: 3rem;
+    font-family: gilroy-bold;
+    text-align: center;
+    color: rgba(0, 51,102,1);
+    padding-top: 2rem;
+    margin:auto;
+}
+
+.pressText
+{
+    color: rgb(0,51,102);
+    font-size: 2rem;
+    margin: auto;
+    padding-top: 3rem;
+    text-align: center;
+    z-index: 100;
+    
+}
+
+/* footer */
+.footerDesignElement
+{
+    width: 100%;
+    height: 0.2rem;
+    background-color: rgb(241, 179, 0);
+}
+
+.footerBackground
+{
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(0,51,102);
+}
+
+
+.footerLogoText
+{
+    margin: 12rem 0rem 0rem 40%;
+    width: 20%;
+    position:absolute;
+    color: white;
+}
+
+.footerContactTitle
+{
+    color: white;
+    margin: 5rem 0 0 70%;
+    font-family: gilroy-bold;
+    font-size: 1.7rem;
+    position: absolute;
+}
+
+.footerContactTitle:after{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 0%; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 1.2rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+}
+
+.footerContactText
+{
+    color: white;
+    margin: 10rem 0 0 70%;
+    position: absolute;
+}
+
+.footerContactTexts
+{
+    color: white;
+    margin: 16rem 0 0 70%;
+    position: absolute;
+}
+
+.creditTitle
+{
+    color: white;
+    font-size: 1.7rem;
+    position:absolute;
+    font-family: gilroy-bold;
+    margin: 3.7rem 0 0 40%;
+}
+
+.footerImageOne
+{
+    position: absolute;
+    width: 8rem;
+    padding: 3rem 0 0 10.5%;
+}
+
+.footerImageTwo
+{
+    position: absolute;
+    width: 8rem;
+    padding: 3rem 0 0 22%;
+}
+
+.footerImageThree
+{
+    position: absolute;
+    width: 9rem;
+    padding: 12rem 0 0 10%;
+}
+
+.footerImageFour
+{
+    position: absolute;
+    width: 8rem;
+    padding: 12rem 0 0 22%;
+    
+}
+
+.creditTitle:after 
+{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 0%; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 1.2rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+}
+
+/* research page */
+
+/* section 1 */
+.researchBackground
+{
+    background-color: white;
+    height: 75rem;
+    width: 100%;
+}
+
+.researchTitleMargin
+{
+    text-align: center;
+    width: 98%;
+    height: 5rem;
+    margin: 4rem 0 0 0;
+}
+
+.researchTitle
+{
+    color: rgba(0, 51, 102);
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: gilroy-bold;
+    
+}
+
+.researchArrow
+{
+    position:absolute;
+    margin-top: 5rem;
+    margin-left: 50%;
+    border: 0.1rem solid rgb(241, 179, 0);
+    height: 30rem;
+}
+
+.researchContent
+{
+    margin: 2rem 10% 0rem 10%;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid red;*/
+    z-index: 2;
+}
+
+.researchCardOne
+{
+    /*border: 1px solid blue;*/
+    width: 60rem;
+    height: 0rem;
+    text-align: left;
+    padding-top: 9rem;
+    
+    
+    
+}
+
+.researchCardTwo
+{
+    /*border: 1px solid blue;*/
+    width: 60rem;
+    height: 10rem;
+    text-align: left;
+    margin-left: 10rem;
+    padding-top: 10rem;
+}
+
+.researchCardThree 
+{
+    /*border: 1px solid blue;*/
+    width: 60rem;
+    height: 10rem;
+    text-align: left;
+}
+
+.researchCardFour
+{
+     /*border: 1px solid blue;*/
+     width: 60rem;
+     height: 0rem;
+     text-align: left;
+     margin-left: 10rem;
+}
+
+.researchSecondContent
+{
+    margin: 11rem 10% 0rem 10%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    
+}
+
+
+
+.researchCardTitle
+{
+    color: rgba(0,51,102,1);
+    font-size: 1.2rem;
+    font-family: gilroy-semi;
+    margin-top: 1.3rem;
+    
+}
+
+
+
+.researchCardDescription
+{
+    color:rgba(0, 51,102,1);
+    font-size: 0.6;
+    padding-top: 1rem;
+}
+
+.researchCardTitle:after
+{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 0%; /* This will center the border. */
+    width: 95%; /* Change this to whatever width you want. */
+    padding-top: 0.7rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.1rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+}
+
+.publicationTitleMargin
+{
+    text-align: center;
+    width: 98%;
+    height: 5rem;
+    margin: 25rem 0 0 1%;
+    
+}
+
+.smallTextMargin
+{
+    text-align: center;
+    width: 98%;
+    height: 5rem;
+    margin: 15rem 0 0 1%;
+    position:absolute;
+    
+}
+
+.publicationTitle
+{
+    font-size: 2.2rem;
+    color: rgb(0,51,102);
+    font-family: gilroy-bold;
+    
+}
+
+
+
+.publicationText
+{
+    padding: 1rem 25% 0 25%;
+    color: rgb(0,51,102);
+}
+
+
+.leftCurly:before 
+{
+    content: "\00007B";
+    color: rgb(0,51,102);
+    font-size: 25rem;
+    position:absolute;
+    margin-top: 10rem;
+}
+
+.rightCurly:before
+{
+    content: "\00007D";
+    color: rgb(0,51,102);
+    font-size: 25rem;
+    position:absolute;
+    margin: 10rem 0 0 92.5%;
+}
+
+/* resources for educators page */
+
+
+.educatorTitleMargin
+{
+    text-align: center;
+    width: 98%;
+    height: 5rem;
+}
+
+.educatorBackground
+{
+    color: white;
+    height: 60rem;
+    width: 100%;
+}
+
+.educatorText
+{
+    padding: 1rem 25% 0 25%;
+    color: rgb(0,51,102);
+}
+
+.educatorTitleMargin:after
+{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 10%; /* This will center the border. */
+    width: 80%; /* Change this to whatever width you want. */
+    padding-top: 0.7rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+}
+
+.educatorContent
+{
+    margin: 10rem 11% 0rem 10%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    
+}
+
+.educatorContentTwo
+{
+    margin: 5rem 11% 0rem 10%;
+    display: flex;
+    justify-content: space-between;
+    
+    z-index: 2;
+}
+
+.educatorContentThree
+{
+    margin: 10rem 11% 0rem 10%;
+    display: flex;
+    z-index: 2;
+    position:absolute;
+    
+    width: 41rem;
+    height: 10rem
+}
+
+
+
+.anchorConTwo
+{
+    margin: 25rem 11% 0rem 10%;
+    display: flex;
+    z-index: 2;
+    position:absolute;
+    
+    width: 41rem;
+    height: 10rem
+}
+
+.anchorConThree
+{
+    margin: 10rem 0vw 0rem 50vw;
+    display: flex;
+    z-index: 2;
+    position:absolute;
+    
+    width: 39%;
+    height: 10rem
+}
+
+.anchorConFour
+{
+    margin: 25rem 0vw 0rem 50vw;
+    display: flex;
+    z-index: 2;
+    position:absolute;
+    
+    width: 39%;
+    height: 10rem
+}
+
+.educatorCardFour
+{
+    box-shadow: rgb(241, 179, 0) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
+     width: 41rem;
+     height: 10rem;
+     text-align: left;
+     cursor: pointer;
+     transition: .5s ease;
+}
+
+.educatorCardOne
+{   
+    box-shadow: rgb(241, 179, 0) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
+     width: 41rem;
+     height: 10rem;
+     text-align: left;
+     cursor: pointer;
+     transition: .5s ease;
+     
+}
+
+.educatorCardOne:hover 
+{
+    box-shadow:
+    1px 1px #f1b300,
+    2px 2px #f1b300,
+    3px 3px #f1b300,
+    4px 4px #f1b300,
+    5px 5px #f1b300,
+    6px 6px #f1b300;
+    
+    transition: .5s ease;
+    /*
+    box-shadow: 0 0 0 10px #f1b300;
+    transition: .5s ease;
+    */
+}
+
+.iconMargin 
+{
+    position:absolute;
+    padding-left: 3rem;
+    width: 5%;
+    height: 5rem;
+    
+    margin: 1rem 0 0 32rem;
+   
+}
+
+.flaskicon
+{
+    position: absolute; font-size: 3rem; color: rgb(0,51,102); padding: 1rem 0 0 40%;
+}
+
+.iconsearchMargin
+{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    margin: 2.5rem 0 0 74%;
+}
+
+.icondivisionMargin
+{
+    position:absolute;
+    padding-left: 3rem;
+    width: 5%;
+    height: 5rem;
+    
+    margin: 2.8rem 0 0 30rem;
+    
+    
+}
+
+.iconwifiMargin
+{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    margin: 2.5rem 0 0 73.5%;
+}
+
+.educatorCardTwo:hover 
+{
+    box-shadow:
+    1px 1px #f1b300,
+    2px 2px #f1b300,
+    3px 3px #f1b300,
+    4px 4px #f1b300,
+    5px 5px #f1b300,
+    6px 6px #f1b300;
+    
+    transition: .5s ease;
+    /*
+    box-shadow: 0 0 0 10px #f1b300;
+    transition: .5s ease;
+    */
+}
+
+.educatorCardTwo
+{
+    box-shadow: rgb(241, 179, 0) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
+     width: 43rem;
+     height: 10rem;
+     text-align: left;
+     margin-left: 2rem;
+     cursor: pointer;
+     transition: .5s ease;
+}
+
+.binaryIcon 
+{
+    font-size: 2rem; font-family: gilroy-bold;  color: rgb(0,51,102);
+    
+    
+}
+.educatorCardTitle 
+{
+    padding: 0.5rem 0 0 2rem;
+    color: rgb(0,51,102);
+    font-size: 1.5rem;
+    font-family: gilroy-bold;
+    
+}
+
+.educatorCardDesc
+{
+    padding: 1rem 9rem 0 2rem;
+    color: rgb(0,51,102);
+    font-size: 0.9rem;
+    
+    
+   
+}
+
+.educatorImage
+{
+    width: 5rem;
+    height: 5rem;
+    position:absolute;
+    
+}
+/* Sub pages */
+.subpageBackground 
+{
+  background-color: white;
+  height: 80rem;
+  width: 100%;
+
+}
+
+
+/* table */
+
+table.customTable {
+    width: 75%;
+    background-color: #F1B300;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #003366;
+    border-style: solid;
+    color: #FFFFFF;
+    margin-top: 33rem;
+    margin-left: 12.5%;
+  }
+  
+  table.customTable td, table.customTable th {
+    border-width: 2px;
+    border-color: #003366;
+    border-style: solid;
+    padding: 0.5vw;
+  }
+  
+  table.customTable thead {
+    background-color: #003366;
+  }
+
+  /* table end */
+
+.backButton
+{
+    color: rgb(0,51,102);
+    position: absolute;
+    margin: 3rem 0 0 4rem;
+    cursor: pointer;
+}
+.subpageTitle
+{
+    font-size: 2.2rem;
+    color: rgb(0,51,102);
+    font-family: gilroy-bold;
+    position: absolute;
+    margin: 7rem 0 0 13%;
+}
+
+.subpagesmallTitle
+{
+    font-size: 2.2rem;
+    color: rgb(0,51,102);
+    font-family: gilroy-bold;
+    position: absolute;
+    margin: 7rem 0 0 13%;
+}
+
+.subpageTextMargin
+{
+    color: rgb(0,51,102);
+    margin: 13rem 0 0 13%;
+    width: 50%;
+    height: 7rem;
+    position: absolute;
+}
+
+.subpagesmallTextMargin
+{
+    color: rgb(0,51,102);
+    margin: 13rem 0 0 13%;
+    width: 50%;
+    height: 7rem;
+    position: absolute;
+}
+.subpageText
+{
+    color: rgb(0,51,102);
+    font-size: 1rem;
+    text-align: left;
+}
+
+.subpageTitle:after
+{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 0%; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 0.7rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+}
+
+.subpagesmallTitle:after
+{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 0%; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 0.7rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+}
+.line
+{
+    margin: 33rem 0 0 17%;
+    position:absolute;
+    width: 38%;
+    border: 0.1rem solid rgb(0,51,102);
+}
+
+.altline
+{
+    margin: 35.5rem 0 0 25%;
+    position:absolute;
+    width: 30%;
+    border: 0.02rem solid lightgray;
+}
+
+.altlineHeight
+{
+    margin: 31rem 0 0 24%;
+    position:absolute;
+    height: 17rem;
+    border: 0.1rem solid rgb(0,51,102);
+}
+
+.currTitle 
+{
+    font-size: 2.2rem;
+    color: rgb(0,51,102);
+    font-family: gilroy-bold;
+    position: absolute;
+    margin: 25rem 0 0 13%;
+}
+
+.currTitle:after 
+{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: 0%; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 0.7rem; /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid rgb(241, 179, 0); /* This creates the border. Replace black with whatever color you want. */
+}
+
+.tableText
+{
+    font-size: 1rem;
+    font-family: gilroy-bold;
+    color: rgb(0,51,102);
+    position: absolute;
+    margin: 31rem 0 0 25%;
+}
+
+.subpageImageLeft
+{
+    width: 15rem;
+    position:absolute;
+    margin: 10rem 0 0 3%;
+}
+
+.subpageImageRight 
+{
+    width: 15rem;
+    position: absolute;
+    margin: 7rem 0 0 80%;
+}
+
+
+/*  Contact Page */
+
+.contactBackground
+{
+    color: white;
+    height: 50rem;
+    width: 100%;
+}
+.contactTitleMargin
+{
+    position: absolute;
+    width: 80%;
+    height: 11rem;
+    margin: 5rem 0 0 10%;
+    font-family: gilroy-bold;
+    text-align: center;
+    border-bottom: 0.2rem solid rgb(241, 179, 0)
+}
+
+.contactTitleText
+{
+    font-family: gilroy-light;
+    font-size: 1.1rem;
+    padding: 1rem 0 0 0;
+    color: black;
+}
+.contactTitle 
+{
+    
+    color: black;
+    font-size: 2.2rem;
+    
+}
+
+#middle_name
+{
+    display:none;
+}
+
+.nameinput
+{
+    border-radius: 1rem;
+    border:0.2rem solid rgba(0, 51,102,1);
+    width: 30%;
+    height: 2rem;
+    font-family: gilroy-light;
+    margin-right: 20%;
+}
+
+.messageinput
+{
+    border-radius: 1rem;
+    border:0.2rem solid rgba(0, 51,102,1);
+    width: 30%;
+    
+    padding-bottom: 3rem;
+    padding-top: 0.3rem;
+    font-family: gilroy-light;
+    margin-right: 0%;
+    margin-top: 2rem;
+}
+
+.emailinput
+{
+    border-radius: 1rem;
+    border:0.2rem solid rgba(0, 51,102,1);
+    width: 30%;
+    height: 2rem;
+    font-family: gilroy-light;
+    margin-right: 0%;
+}
+
+.phoneinput
+{
+    border-radius: 1rem;
+    border:0.2rem solid rgba(0, 51,102,1);
+    width: 30%;
+    height: 2rem;
+    font-family: gilroy-light;
+   
+    margin-right: 20%;
+}
+
+.submitbutton
+{
+    background-color: rgb(0,51,102);
+    color: white;
+    border: 1px solid rgb(0,51,102);
+    border-radius: 0.8rem;
+    height: 2rem;
+    width: 5rem;
+    cursor:pointer;
+    position:absolute;
+    margin: 32rem 0 0 56%;
+}
+
+.textcontent
+{
+    margin: 20rem 0 0 30%;
+    position:absolute;
+    width: 50%;
+}
+/*media queries */
+
+
+
+@media screen and (max-width: 1938px)
+{
+    .aboutusbackground
+    {
+        height: 40rem;
+    }
+
+}
+
+@media screen and (max-width: 1750px)
+{
+    .aboutustextsection
+    {
+        font-size: 1.5rem;
+    }
+
+    .aboutusbigtext,.aboutusbiggertext
+    {
+        padding-left: 15%;
+    }
+}
+
+@media screen and (max-width: 1700px)
+{
+    .educatorContentThree,.anchorConTwo,.anchorConThree,.anchorConFour
+    {
+        width: 38%;
+    }
+    .partnerCardOne,.partnerCardTwo
+    {
+        margin-right: 5rem;
+    }
+
+    .iconMargin
+    {
+        margin-left: 27vw;
+    }
+
+    .icondivisionMargin
+    {
+        margin-left: 26vw;
+    }
+
+    .iconsearchMargin
+    {
+        margin-left: 72vw;
+    }
+
+    .iconwifiMargin
+    {
+        margin-left: 71vw;
+    }
+}
+@media screen and (max-width: 1500px) {
+    
+    .partnerCardOne{
+        margin-right: 3rem;
+    }
+
+    .partnerCardTwo{
+        margin-right: 3rem;
+    }
+
+    
+
+    .rightCurly:before
+    {
+        font-size: 22rem;
+        margin: 12rem 0 0 91%;
+    }
+
+    .leftCurly:before
+    {
+        font-size: 22rem;
+        margin-top: 12rem;
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width: 1400px)
+{
+    .aboutusbigtext,.aboutusbiggertext
+    {
+        padding-left: 5%;
+        
+    }
+
+    .newspaperIcon
+    {
+        font-size: 10rem;
+        padding-top: 5rem;
+        z-index: 1;
+    }
+
+    .partnerCardThree
+    {
+        margin-right: 0rem;
+    }
+    .partnerImageContent
+    {
+        padding-left: 0%;
+    }
+}
+
+@media screen and (max-width: 1362px)
+{
+    .leftCurly,.rightCurly
+    {
+        display:none;
+    }
+}
+@media screen and (max-width: 1300px)
+{
+
+    .iconwifiMargin
+    {
+        margin-top: 4rem;
+    }
+    .footerContactTitle,.footerContactText,.footerContactTexts
+    {
+        margin-left: 80%;
+    }
+    .educatorCardDesc
+    {
+        font-size: 0.8rem;
+    }
+
+
+    .teamCardOne,.teamCardTwo
+    {
+        margin-right: 4rem;
+    }
+    .aboutustextsection
+    {
+        margin: 35rem 0 0 18.5%;
+    }
+    .aboutusbigtext,.aboutusbiggertext
+    {
+        padding-left: 23%;
+    }
+
+    .axesimage
+    {
+        margin: 0rem 0 0 40%;
+    }
+    .aboutusbackground
+    {
+        height: 70rem;
+    }
+
+    .aboutusbigtextsection
+    {
+        width: 80%;
+    }
+
+    .aboutustextsection
+    {
+        height: 29.5rem;        
+    }
+
+    .partnerImageContent
+    {
+        margin: 15rem 0 0 0;
+        padding-left: 8%;
+        
+    }
+
+    .partnerCardOne,.partnerCardTwo
+    {
+        margin-right: 3%;
+    }
+
+    
+
+
+}
+
+@media screen and (max-width: 1206px)
+{
+    nav li {
+        padding: 0rem;
+        margin: 1rem 5.9rem 2rem 74vw;
+        color: white;
+        white-space: nowrap;
+        
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: block;
+        
+        
+    }
+    #nav-toggle {
+        display: none;
+    }
+
+    .logoResize
+    {
+        
+    padding: 0.5rem 0 0 2rem;
+    height: 5rem;
+
+    }
+    .xno
+    {
+        display:inline-block;
+        color: white;
+        -webkit-transform:rotate(-90deg);
+        -moz-transform:rotate(-90deg);
+        -o-transform:rotate(-90deg); 
+        margin-left: 60vw;
+        font-size: 2.15rem
+    }
+
+    nav a {
+
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    nav {
+        text-align: left;
+        position: absolute;
+        background-color: rgba(27,27,27,0.8);
+        width: 100%;
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+        
+        
+    }
+    #nav-toggle:checked ~ nav {
+        transform: scale(1,1);
+    }
+    #nav-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+
+    .partnerImageContent
+    {
+        padding-left: 2%;
+    }
+    .partnerCardOne,.partnerCardTwo
+    {
+        margin-right: 4rem;
+    }
+
+    .partnerCardThree
+    {
+        margin-right: 0;
+    }
+
+    .newspaperIcon
+    {
+        font-size: 0rem;
+    }
+
+    .teamCardOne,.teamCardTwo
+    {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 1150px)
+{
+
+    .teamCardOne,.teamCardTwo
+    {
+        margin-right: 0rem;
+    }
+
+    .footerImageOne,.footerImageThree
+    {
+        margin-left: 20%;
+    }
+
+    .footerImageTwo,.footerImageFour
+    {
+        margin-left: 35%;
+    }
+    .footerBackground
+    {
+        height: 65rem;
+    }
+
+    .footerContactTitle
+    {
+        margin: 45rem 0 0 40%;
+    }
+
+    .creditTitle
+    {
+        margin:auto;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        padding: 25rem 0 0 33vw;
+    }
+
+    .footerLogoText
+    {
+        margin:auto;
+        text-align: center;
+        align-items: center;
+        display:block;
+        width: 50%;
+        position: absolute;
+        padding: 30rem 0 0 25%;
+        
+    }
+
+    .footerContactText
+    {
+        margin: 50rem 0 0 40%;
+    }
+
+    .footerContactTexts
+    {
+        padding: 40rem 0 0 0;
+        margin-left: 40%;
+    }
+    .partnerDesc
+    {
+        padding: 1rem 15% 0 15%;
+    }
+    .partnerImageContent
+    {
+        
+        display:inline-block;
+        padding: 22rem 0 0 4rem;
+        align-items: center;
+        text-align: center;
+        margin:auto;
+    }
+
+    .partnerBackground
+    {
+        height: 100rem;
+    }
+
+    .partnerColorBackground
+    {
+        height: 102rem;
+    }
+
+    .partnerCardTwo,.partnerCardThree
+    {
+        margin-top: 2rem;
+    }
+
+    .teamImageContent
+    {
+        display:inline-block;
+        margin:auto;
+        align-items: center;
+        text-align: center;
+        padding-left: 36vw;
+    }
+
+    .teamBackground
+    {
+        height: 104rem;
+    }
+
+    .mountainOverlay
+    {
+        height: 104rem;
+    }
+
+   
+    .teamCardTwo,.teamCardThree
+    {
+        margin-top: 10rem;
+    }
+
+    .teamTitleMargin
+    {
+        padding-left: 38%;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .educatorCardDesc
+    {
+        padding-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+
+    .iconMargin,.iconsearchMargin,.iconwifiMargin
+    {
+        display:none;
+    }
+
+    .educatorContentThree
+    {
+        margin: 11rem 0 0 14%;
+        width: 71%;
+    }
+
+    .anchorConThree
+    {
+        margin: 22.5rem 0 0 14%;
+        width: 71%;
+    }
+
+    .anchorConTwo
+    {
+        margin: 34rem 0 0 14%;
+        width: 71%;
+    }
+
+    .anchorConFour
+    {
+        margin: 45rem 0 0 14%;
+        width: 71%;
+    }
+
+    .flaskicon
+    {
+        display:none;
+        color: transparent;
+    }
+
+    .educatorContentTwo
+    {
+        display:inline-block;
+        margin-top: 0;
+    }
+
+    .educatorBackground
+    {
+        height: 70rem;
+    }
+
+    .educatorCardOne
+    {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .educatorCardTwo
+    {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .educatorContent
+    {
+        display:inline-block;
+    }
+
+    .educatorImage
+    {
+        display:none;
+    }
+
+    .binaryIcon
+    {
+        display:none;
+    }
+    .researchCardOne
+    {
+        padding-top: 2rem;
+    }
+
+    .researchCardTwo
+    {
+        padding-top: 3rem;
+    }
+
+    .smallTextMargin
+    {
+        margin-top: 20rem;
+    }
+
+    .publicationTitleMargin
+    {
+        margin-top: 34rem;
+    }
+
+}
+
+@media screen and (max-width: 1000px)
+{
+    .xno
+    {
+        margin-left: 50vw;
+    }
+
+    nav li
+    {
+        margin-left: 70vw;
+    }
+
+    .aboutustextsection
+    {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 950px)
+{
+    .introbackgroundtext
+    {
+        margin: 0 2rem 0 2rem;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .axesimage
+    {
+        display: none;
+    }
+
+    .aboutustextsection
+    {
+        margin-top: 24rem;
+    }
+    .aboutusbackground
+    {
+        height: 60rem;
+    }
+
+    .researchContent
+    {
+        display: inline-block;
+        width: 89%;
+        margin-right: 0;
+        
+    }
+
+    .researchArrow
+    {
+        display:none;
+    }
+
+    .researchCardOne
+    {
+        width: 70%;
+        margin-left: 3rem;
+    }
+
+    .researchCardTwo
+    {
+        margin-top: 15rem;
+        margin-left: 3rem;
+        width: 70%;
+    }
+
+    .smallTextMargin
+    {
+        margin-top: 5rem;
+    }
+
+    .publicationTitleMargin
+    {
+        margin-top: 20rem;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    
+    
+    
+    .nameinput, .phoneinput,.emailinput,.messageinput
+    {
+        width: 8rem;
+    }
+    .teamImageContent
+    {
+        padding-left: 33vw;
+    }
+
+    .teamTitleMargin
+    {
+        padding-left: 33vw;
+    }
+
+    .creditTitle
+    {
+        margin:auto;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        padding: 25rem 0 0 28vw;
+    }
+}
+
+@media screen and (max-width: 730px)
+{
+    .xno
+    {
+        margin-left: 40vw;
+    }
+
+    nav li
+    {
+        margin-left: 65vw;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    table.customTable {
+        width: 75%;
+        background-color: #F1B300;
+        border-collapse: collapse;
+        border-width: 2px;
+        border-color: #003366;
+        border-style: solid;
+        color: #FFFFFF;
+        margin-top: 33rem;
+        margin-left: 5%;
+        
+      }
+
+    .researchBackground
+    {
+        height: 90rem;
+    }
+    .researchCardTwo
+    {
+        margin-top: 20rem;
+    }
+
+    .publicationTitleMargin
+    {
+        margin-top: 25rem;
+    }
+    .aboutustextsection
+    {
+        margin: 27rem 0 0 10%;
+        height: 35rem;
+    }
+
+    .aboutusbackground
+    {
+        height: 80rem;
+    }
+
+    .textcontent
+    {
+        margin-left: 40%;
+    }
+
+    .phoneinput,.emailinput
+    {
+        margin-top: 1rem;
+    }
+    .submitbutton
+    {
+        margin: 40rem 0 0 40%;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    .aboutustextsection{
+        border-left: none;
+    }
+
+    .footerImageOne,.footerImageThree
+    {
+        margin-left: 10%;
+    }
+
+    .footerImageTwo,.footerImageFour
+    {
+        margin-left: 35%;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .educatorContentThree
+    {
+        margin: 11rem 0 0 14%;
+        width: 71%;
+        height: 12rem;
+    }
+
+    .anchorConThree
+    {
+        margin: 24.5rem 0 0 14%;
+        width: 71%;
+        height: 12rem;
+    }
+
+    .anchorConTwo
+    {
+        margin: 37.5rem 0 0 14%;
+        width: 71%;
+        height: 12rem;
+    }
+
+    .anchorConFour
+    {
+        margin: 51rem 0 0 14%;
+        width: 71%;
+        height: 12rem;
+    }
+
+    table.customTable {
+        width: 75%;
+        background-color: #F1B300;
+        border-collapse: collapse;
+        border-width: 2px;
+        border-color: #003366;
+        border-style: solid;
+        color: #FFFFFF;
+        margin-top: 33rem;
+        margin-left: 0%;
+        
+      }
+
+    .educatorCardOne,.educatorCardTwo
+    {
+        height: 12rem;
+    }
+
+    .contactTitleMargin
+    {
+        border: none;
+    }
+    .creditTitle
+    {
+        padding: 25rem 0 0 20vw;
+    }
+    .teamImageContent
+    {
+        padding-left: 28vw;
+    }
+
+    .teamTitleMargin
+    {
+        padding-left: 28vw;
+    }
+    .xno
+    {
+        margin-left: 30vw;
+    }
+
+    nav li
+    {
+        margin-left: 60vw;
+    }
+
+    .introbackgroundtext
+    {
+        margin: 0 1rem 0 1rem;
+        
+    }
+
+    .backgroundoftext
+    {
+        height: 40rem;
+    }
+
+    .introbackground
+    {
+        height: 45rem;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+
+    .subpagesmallTitle:after
+    {
+        display:none;
+    }
+    .subpagesmallTextMargin
+    {
+        margin-top: 15rem;
+        text-align: center;
+    }
+    .currTitle
+    {
+        margin-left: 5%;
+        font-size: 2rem;
+    }
+
+    .researchContent
+    {
+        margin-left: 2rem;
+    }
+
+    .researchCardTwo
+    {
+        margin-top: 27rem;
+    }
+
+    .researchBackground
+    {
+        height: 100rem;
+
+    }
+
+    .publicationTitleMargin
+    {
+        margin-top: 25rem;
+    }
+    .creditTitle
+    {
+        margin:auto;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        padding: 25rem 0 0 15vw;
+    }
+    .xno
+    {
+        margin-left: 25vw;
+    }
+
+    nav li
+    {
+        margin-left: 55vw;
+    }
+
+    .aboutusbiggertext
+    {
+        font-size: 2.5rem;
+    }
+
+    .aboutustextsection
+    {
+        font-size: 1.4rem;
+    }
+
+    .teamImageContent
+    {
+        padding-left: 24vw;
+    }
+
+    .teamTitleMargin
+    {
+        padding-left: 24vw;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+
+    .educatorContentThree
+    {
+        margin: 11rem 0 0 14%;
+        width: 71%;
+        height: 14.8rem;
+    }
+
+    .anchorConThree
+    {
+        margin: 27.5rem 0 0 14%;
+        width: 71%;
+        height: 14.8rem;
+    }
+
+    .anchorConTwo
+    {
+        margin: 43.5rem 0 0 14%;
+        width: 71%;
+        height: 14.8rem;
+    }
+
+    .anchorConFour
+    {
+        margin: 60rem 0 0 14%;
+        width: 71%;
+        height: 14.8rem;
+    }
+
+    .educatorCardOne,.educatorCardTwo
+    {
+        height: 15rem;
+    }
+
+    .educatorBackground
+    {
+        height: 85rem;
+    }
+
+    .textcontent
+    {
+        margin: 25rem 0 0 35%;
+    }
+
+    .submitbutton
+    {
+        margin-top: 45rem;
+    }
+    .creditTitle
+    {
+        margin:auto;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        padding: 23rem 0 0 10vw;
+        font-size: 1.5rem;
+    }
+    .footerLogoText
+    {
+        padding-top: 27rem;
+        font-size: 0.8rem;
+    }
+    .teamImageContent
+    {
+        padding-left: 20vw;
+    }
+
+    .teamTitleMargin
+    {
+        padding-left: 20vw;
+    }
+
+    .partnerDesc
+    {
+        padding-top: 0rem;
+        font-size: 1.1rem;
+    }
+    .aboutusbiggertext
+    {
+        font-size: 2.3rem;
+        padding-left: 15%;
+    }
+    .backgroundoftext
+    {
+        height: 47rem;
+    }
+
+    .introbackground
+    {
+        height: 52rem;
+    }
+
+    .aboutustextsection
+    {
+        font-size: 1.3rem;
+        margin-left: 4%;
+    }
+
+    .partnerCardOne,.partnerCardTwo,.partnerCardThree
+    {
+        width: 17rem;
+    }
+
+    .nauimageResize,.nsfimageResize,.imageResize
+    {
+        width: 16.7rem;
+    }
+    
+    .footerContactTitle
+    {
+        padding: 2rem 0 0 0%;
+        margin-left: 32%;
+    }
+    .footerContactText
+    {   
+        padding-top: 1rem;
+        margin-left: 20%;
+    }
+    .footerContactTexts
+    {
+        margin-top: 5rem;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+
+    .teamImageContent
+    {
+        padding-left: 12.5vw;
+    }
+
+    .teamTitleMargin
+    {
+        padding-left: 13.5vw;
+    }
+    .xno
+    {
+        margin-left: 15vw;
+    }
+
+    nav li
+    {
+        margin-left: 45vw;
+    }
+
+    .backgroundoftext
+    {
+        height: 55rem;
+    }
+
+    .introbackground
+    {
+        height: 59rem;
+    }
+
+    .aboutustextsection
+    {
+        font-size: 1.2rem;
+    }
+
+    .partnerCardOne,.partnerCardTwo,.partnerCardThree
+    {
+        width: 15rem;
+        height: 13rem;
+    }
+
+    .partnerCardTwo,.partnerCardThree
+    {
+        margin-top: 7rem;
+        height: 14rem;
+    }
+    .nauimageResize
+    {
+        padding-top: 4rem;
+        width: 15rem; height: 5rem;
+    }
+
+    .nsfimageResize,.imageResize
+    {
+        width: 15rem; height: 14rem;
+    }
+
+    .partnerImageContent
+    {
+        padding-left: 15%;
+        margin-top: 10rem;
+        
+        
+    }
+
+    .researchBackground
+    {
+        height: 110rem;
+    }
+
+    .publicationTitleMargin
+    {
+        margin-top: 30rem;
+    }
+}
+
